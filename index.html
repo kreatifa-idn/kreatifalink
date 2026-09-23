@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Bio Saya</title>
+    <!-- FontAwesome CDN untuk Ikon Asli WA, Shopee, TikTok, Uang/Pricelist -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #121212;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container dengan Rasio 9:16 */
+        .bio-container {
+            width: 100%;
+            max-width: 420px;
+            aspect-ratio: 9 / 16;
+            
+            /* BACKGROUND CUSTOM JPG/PNG */
+            background-image: url('bg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Wrapper Daftar Link */
+        .links-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px; /* Jarak antar tombol */
+            margin-top: 25%; /* Posisi tombol sedikit di atas */
+        }
+
+        /* Desain Tombol Link */
+        .bio-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            padding: 18px 24px;
+            
+            /* Background Balok Putih Solid (Tidak Transparan) */
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 50px;
+            
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Efek Hover */
+        .bio-link:hover {
+            background: #f5f5f5;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Styling Ikon FontAwesome (WA, Shopee, TikTok, Pricelist) */
+        .bio-link i.icon-fa {
+            font-size: 32px;
+            position: absolute;
+            left: 22px;
+            color: #556B2F; /* Warna Hijau Olive */
+        }
+
+        /* Warna Teks Hijau Olive */
+        .text-olive {
+            color: #556B2F;
+        }
+
+        .bio-link span {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bio-container">
+
+        <!-- Daftar Link Berurutan ke Bawah -->
+        <div class="links-container">
+
+            <!-- 1. WhatsApp -->
+            <a href="https://wa.me/6283192511661" target="_blank" class="bio-link">
+                <i class="fa-brands fa-whatsapp icon-fa"></i>
+                <span class="text-olive">WhatsApp</span>
+            </a>
+
+            <!-- 2. Shopee -->
+            <a href="https://shopee.co.id/kreatifa.idn" target="_blank" class="bio-link">
+                <i class="fa-solid fa-bag-shopping icon-fa"></i>
+                <span class="text-olive">Shopee</span>
+            </a>
+
+            <!-- 3. TikTok -->
+            <a href="https://www.tiktok.com/@kreatifa_idn?" target="_blank" class="bio-link">
+                <i class="fa-brands fa-tiktok icon-fa"></i>
+                <span class="text-olive">TikTok</span>
+            </a>
+
+            <!-- 4. Pricelist (Ikon Uang) -->
+            <a href="https://drive.google.com/your-pricelist-link" target="_blank" class="bio-link">
+                <i class="fa-solid fa-money-bill-wave icon-fa"></i>
+                <span class="text-olive">Pricelist</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
